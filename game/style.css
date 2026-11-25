@@ -1,0 +1,32 @@
+/* WARUNG KILAT — page chrome around the canvas. The game itself draws
+   everything on the canvas; this file only frames it, no network loads. */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #101c22;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+#stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+#game {
+  width: min(1280px, 96vw);
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  background: #182a30;
+}
+#hint {
+  margin: 0;
+  color: #9fb4b8;
+  font-size: 13px;
+  text-align: center;
+}
